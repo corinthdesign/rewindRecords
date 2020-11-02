@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.heroText {
+  position: relative;
+  text-align: center;
+  display: block;
+  width: 80vw;
+  margin: 0 auto;
+  z-index: 200;
+}
+
+.heroText h1 {
+  font-family: "Rubik Mono One", sans-serif;
+  color: #fff;
+  font-size: 4em;
+  letter-spacing: 0.15em;
+  transform: translateY(40vh);
+}
+
+#heroTextLink{
+  font-size: 1em;
+  background-color: #fff;
+  color: #C8A95C;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+#heroTextLink:hover {
+  background-color: #C8A95C;
+  color: #fff;
+}
+
+.spacer1 {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.spacer2 {
+  width: 100vw;
+  height: auto;
+  background: #000;
+  position: relative;
+  padding: 3em .25em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+.spacer2 h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  margin: 0 auto;
+  font-size: 5em;
+  color: white;
+}
+
+.spacer3 {
+  background-color: #fff;
+  height: 40vh;
+  position: relative;
+  text-align: center;
+  padding: 3em .25em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+.spacer3 h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  margin: 0 auto;
+  font-size: 5em;
+  color: #000;
+}
+
+.spacer3 p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+  color: #000;
+}
+
+.spacer3 a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.spacer4 {
+  background: linear-gradient(45deg, #C8A95C, #dbccab);
+  height: 30vh;
+  padding: 3em;
+  position: relative;
+  padding: 3em .25em;
+  text-align: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+.spacer4 h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+}
+
+.spacer4 p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 2.5em;
+  color: white;
+}
+
+.spacer4 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.aboutTable {
+  position: relative;
+  display: block;
+  padding-top: 4em;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.aboutTable h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 6em;
+  color: white;
+}
+
+.aboutTable p {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1em;
+  color: white;
+}
+
+.aboutTable strong {
+  font-size: 1.5em;
+}
+
+.aboutTable a {
+  color: #C8A95C;
+  text-decoration: none;
+}
+
+.toolsAndEquipment {
+  display: none;
+}
+
+.toolsAndEquipment.active {
+  display: table-row;
+}
+
+/*================PRICING PAGE=================*/
+
+.pricingIntro {
+  padding: 10em 10% 3em 10%;
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.pricingIntro h1 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 5em;
+  text-align: center;
+  color: #000;
+}
+
+.pricingIntro p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3em;
+  color: #000;
+}
+
+.pricingTable {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 90vw;
+  padding: 2em;
+}
+
+.bands h1, .soloArtists h1 {
+  text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 3em;
+  color: #000;
+}
+
+.bands h2, .soloArtists h2 {
+  text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 2em;
+  color: #000;
+}
+
+.bands p, .soloArtists p{
+  font-family: 'Rubik', sans-serif;
+  font-size: 2em;
+  color: #000;
+}
+
+.bands {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.soloArtists {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+/*SLIDESHOW CSS*/
+
+.slideshow {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.slideshow-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  -webkit-animation-name: kenburns;
+  animation-name: kenburns;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

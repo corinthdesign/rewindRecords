@@ -1,0 +1,116 @@
+html {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: block;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  padding: 3em 2em 0 2em;
+  height: auto;
+  margin: 0 auto;
+  transform: translateY(-3em);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.0);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+ .nav:hover {
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+   transform: translateY(0);
+   padding-bottom: 1.75em;
+   opacity: 1;
+ }
+
+.nav ul {
+  width: auto;
+  float: left;
+  display: inline-block;
+  position: relative;
+  padding: 1em 4em 1em 4em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav a {
+  width: auto;
+  display: inline-block;
+  position: relative;
+  float: left;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 1);
+  padding: 1em 2em;
+  text-decoration: none;
+  text-align: center;
+  border-right: rgba(20, 20, 20, 0);
+  border-left: rgba(20, 20, 20, 0);
+  overflow: hidden;
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+#highlight {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+#highlight:hover {
+  background-color: #C8A95C;
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav_logo {
+  display: inline-block;
+  position: relative;
+  float: left ;
+  width: 30em;
+  min-width: 20em;
+  margin: 0 auto;
+  height: 8em;
+  cursor: pointer;
+  background-image: url("images/logoBlack.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transform: rotate(0deg);
+  overflow: none;
+  transition: all 0.3s ease;
+}
+
+.nav button:hover {
+}
+
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+footer p {
+  font-family: "Rubik", arial, sans-serif;
+  font-weight: 300;
+  color: rgba(150, 150, 150, 1);
+  font-size: .75em;
+}
+
+footer a {
+  color: rgba(120, 120, 120, 1);
+  text-decoration: none;
+}
